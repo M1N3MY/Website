@@ -1,0 +1,93 @@
+body, ul, li, h1, h2, h3 { /* removes default browser css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #571310;
+    font-family: 'Verdana', sans-serif;
+    justify-content: center;
+    padding: 20px;
+}
+
+.site-header {
+    padding: 2px;
+    color: #faa994;
+}
+
+/* GENERAL */
+.background {
+    display: flex;
+    flex-direction: column;
+    background-color: #a72913;
+    width: 100%;
+    max-width: 1000px;
+    gap: 20px;
+    padding: 5px;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #fcd3c5;
+    padding: 10px;
+}
+
+/* NAVIGATION */ 
+.top-nav-button {
+    display: flex;
+    flex-direction: row;
+    background-color: #a72913;
+    font-size: 20px;
+    color: #fcd3c5;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.top-nav {
+    display: flex;
+    width: 90%;
+    gap: 10px;
+    padding: 5px;
+}
+
+.side-nav-link {
+    text-decoration: none;
+    color: #571310;
+}
+
+.side-nav-link:hover {
+    color: #a72913;
+}
+
+/* COMPONENTS */
+.sidebar {
+  display: flex;
+  flex-shrink: 0; /* no shrinking*/
+  flex-direction: column; /* vertical display -> column */
+  color: #571310;
+  width: 120px;
+  gap: 5px; /* between rows and columns... */
+}
+
+.panel {
+    background: #faa994;
+    border: 2px solid #a72913;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
