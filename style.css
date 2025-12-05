@@ -5,26 +5,30 @@ body, ul, li, h1, h2, h3 { /* removes default browser css */
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #571310;
     font-family: 'Verdana', sans-serif;
-    justify-content: center;
     padding: 20px;
 }
 
-.site-header {
-    padding: 2px;
+/* header */
+.header {
+    text-align: center;
+    padding: 5px;
     color: #faa994;
+    
 }
 
-/* GENERAL */
-.background {
+/* main */
+.wrapper {
     display: flex;
     flex-direction: column;
     background-color: #a72913;
-    width: 100%;
     max-width: 1000px;
     gap: 20px;
     padding: 5px;
+    margin: 0 auto;
 }
 
 .main-container {
@@ -33,30 +37,33 @@ body {
     gap: 20px;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    background-color: #fcd3c5;
-    padding: 10px;
+.updates {
+    height: 200px;
+    color: #571310;
+    font-weight: bold; 
 }
 
-/* NAVIGATION */ 
+/* navigation */ 
 .top-nav-button {
     display: flex;
     flex-direction: row;
-    background-color: #a72913;
+    justify-content: center;
+    background-color: transparent;
     font-size: 20px;
-    color: #fcd3c5;
-    padding: 5px;
+    color: #faa994;
+    padding: 5px; 
     cursor: pointer;
 }
 
 .top-nav {
     display: flex;
+    justify-content: center;
+    border: 5px solid #571310;
+    border-radius: 10px;
+    background-color: #571310;
     width: 90%;
-    gap: 10px;
     padding: 5px;
+    margin: auto;
 }
 
 .side-nav-link {
@@ -68,18 +75,18 @@ body {
     color: #a72913;
 }
 
-/* COMPONENTS */
+/* components */
 .sidebar {
   display: flex;
   flex-shrink: 0; /* no shrinking*/
   flex-direction: column; /* vertical display -> column */
+  background: #faa994;
   color: #571310;
-  width: 120px;
+  width: 150px;
   gap: 5px; /* between rows and columns... */
 }
 
 .panel {
-    background: #faa994;
     border: 2px solid #a72913;
     border-radius: 8px;
     padding: 5px;
@@ -90,4 +97,22 @@ body {
     border: none;
     border-radius: 4px;
     font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 5px solid #571310;
+    background-color: #fcd3c5;
+    padding: 10px;
+}
+
+.content-header {
+    color: #571310;
+    font-weight: bold;
+}
+
+.scrollable {
+    overflow-y: scroll;
 }
