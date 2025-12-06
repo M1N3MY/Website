@@ -12,58 +12,88 @@ body {
     padding: 20px;
 }
 
-/* header */
-.header {
-    text-align: center;
-    padding: 5px;
-    color: #faa994;
-    
-}
-
-/* main */
+/* LAYOUT */
 .wrapper {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     background-color: #a72913;
-    max-width: 1000px;
+    min-width: 1800px;
+    max-width: 1800px;
     gap: 20px;
     padding: 5px;
     margin: 0 auto;
 }
 
+.header { 
+    color: #faa994;  
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
 .main-container {
     display: flex;
-    width: 100%;
     gap: 20px;
 }
 
-.updates {
-    height: 200px;
-    color: #571310;
-    font-weight: bold; 
+.middle {
+    flex-grow: 1;
+    border-bottom: 5px solid #571310;
+    background-color: #fcd3c5; 
 }
 
-/* navigation */ 
+.updates {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    border: 5px solid #571310
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    color:#faa994;
+    font-weight: bold;
+}
+
+/* NAVIGATION */ 
 .top-nav-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: transparent;
+    text-decoration: none;
     font-size: 20px;
-    color: #faa994;
+    color: #fcd3c5;
     padding: 5px; 
     cursor: pointer;
+}
+
+.top-nav-button:hover {
+    color: #faa994;
 }
 
 .top-nav {
     display: flex;
     justify-content: center;
-    border: 5px solid #571310;
     border-radius: 10px;
-    background-color: #571310;
     width: 90%;
     padding: 5px;
     margin: auto;
+}
+
+.sidebar {
+  display: flex;
+  flex-shrink: 0; /* no shrinking*/
+  flex-direction: column; /* vertical display -> column */
+  border-radius: 10px;
+  background: #faa994;
+  color: #571310;
+  width: 250px;
+  padding: 10px;
+  gap: 5px; /* between rows and columns... */
 }
 
 .side-nav-link {
@@ -75,22 +105,12 @@ body {
     color: #a72913;
 }
 
-/* components */
-.sidebar {
-  display: flex;
-  flex-shrink: 0; /* no shrinking*/
-  flex-direction: column; /* vertical display -> column */
-  background: #faa994;
-  color: #571310;
-  width: 150px;
-  gap: 5px; /* between rows and columns... */
-}
-
-.panel {
-    border: 2px solid #a72913;
-    border-radius: 8px;
-    padding: 5px;
-    text-align: center;
+/* COMPONENTS */
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 2px;
 }
 
 .button {
@@ -98,16 +118,6 @@ body {
     border-radius: 4px;
     font-weight: bold;
 }
-
-.content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    border: 5px solid #571310;
-    background-color: #fcd3c5;
-    padding: 10px;
-}
-
 .content-header {
     color: #571310;
     font-weight: bold;
@@ -115,4 +125,13 @@ body {
 
 .scrollable {
     overflow-y: scroll;
+}
+
+.text {
+    color: #571310;
+    font-size: 18px;
+}
+
+.centered {
+    margin: 0 auto;
 }
