@@ -3,46 +3,84 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel = "stylesheet" type="text/css" href="/style.css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
         <title>Sarah's Catalog</title>
     </head> 
     <body> 
+        <!-- header: title + top nav bar -->
         <header class="header">
-            <h2>Sarah's Catalog</h2>  
-        </header>
-        <div class="wrapper">
+            <h2>Sarah's Catalog</h2> 
+            <!-- top nav bar -->
             <nav class="top-nav">
-                <a href="/index.html" class="button top-nav-button">Home</a>
+                <a href="../index.html" class="button top-nav-button">Home</a>
                 <a href="projects.html" class="button top-nav-button">Projects</a>
                 <a href="resume.html" class="button top-nav-button">Resume</a>
             </nav>   
+        </header>
+        <!-- wraps the main container -->
+        <div class="wrapper">
+            <!-- main container: left sidebar, middle, right sidebar --> 
             <div class="main-container">
-                <aside class="sidebar left-sidebar">
-                    <h3>Navigation</h3>
-                    <a class="button side-nav-link" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
-                    <a class="button side-nav-link" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
-                    <a class="button side-nav-link" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
-                    <a class="button side-nav-link" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
-                </aside>
+                <!-- left sidebar -->
+                <nav class="sidebar">
+                    <section class="left-sidebar">
+                        <h3 class="sidebar-header">Navigation</h3>
+                        <a href="gallery.html" class="button side-nav-button">Gallery</a>
+                    </section>
+                    <section class="left-sidebar">
+                        <h3 class="sidebar-header">2</h3>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                    </section>
+                    <section class="left-sidebar">
+                        <h3 class="sidebar-header">3</h3>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                    </section>
+                    <section class="left-sidebar">
+                        <h3 class="sidebar-header">4</h3>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                        <a class="button side-nav-button" href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
+                    </section>
+                </nav>
+                <!-- middle: main content + updates -->
                 <main class="content middle">
                     <section class="content centered">
                         <h3 class="content-header">(Last Updated 9/22/25)</h3>
-                        <iframe src="/documents/simple srosa_resume.docx.pdf" width="1000" height="1000" frameBorder="0"></iframe>                        
+                        <iframe src="../documents/simple srosa_resume.docx.pdf" width="1000" height="1000" frameBorder="0"></iframe>                        
                     </section>
                 </main>
-                <aside class="sidebar panel right-sidebar">
-                    <h3>Fun</h3>
-                    <a class="button side-nav-link"  href="https://i.pinimg.com/736x/9a/cf/29/9acf29d1f1ca63147916bb43c0096692.jpg">Test Link</a>
-                    <img src="https://momg.neocities.org/gifs/i-51402.gif" width="100px" height="150px"> 
-                    <img src="https://momg.neocities.org/gifs/i-31910.gif" width="50px" height="50px">
-                    <img src="https://momg.neocities.org/gifs/i-78883.gif">
-                    <img src="https://momg.neocities.org/gifs/i-49714.gif" width="53" height="46">
-                </aside>
+                <!-- right sidebar -->
+                <nav class="sidebar scrollable">
+                    <section class="right-sidebar">
+                        <!--<h3 class="sidebar-header"></h3>*/-->
+                        <img class="gif" src="https://momg.neocities.org/gifs/i-51402.gif" width="100px" height="150px"> 
+                    </section>
+                    <section class="right-sidebar">
+                        <!--<h3 class="sidebar-header"></h3>*/-->
+                        <img class="gif" src="https://momg.neocities.org/gifs/i-31910.gif" width="50px" height="50px">
+                    </section>
+                    <section class="right-sidebar">
+                        <!--<h3 class="sidebar-header"></h3>*/-->
+                        <img class="gif" src="https://momg.neocities.org/gifs/i-78883.gif" width="50px" height="50px">
+                    </section>
+                    <section class="right-sidebar"> 
+                        <!--<h3 class="sidebar-header"></h3>*/-->
+                        <img class="gif" src="https://momg.neocities.org/gifs/i-49714.gif" width="53" height="46">
+                    </section>
+                </nav>
             </div> 
-            <section class="footer">
-                <footer class="footer"> Warning: site under construction! </footer>
-                <img src="/images/cat-0491.gif" width="50" height="50"> 
-            </section>
+            <!-- footer -->
+            <footer class="footer">
+                <p>Warning: site under construction!</p>
+                <img src="../images/cat-0491.gif" width="30" height="30"> 
+            </footer>
         </div>
     </body>
 </html>
