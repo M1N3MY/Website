@@ -1,0 +1,40 @@
+            body, ul, li, h1, h2, h3 { /* removes default browser css */
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                background-color: #ffffff;
+                font-family: monospace;
+                font-weight: 500;
+                padding: 20px;
+}
+
+            /* COMPONENTS */
+            .content {
+                display: flex;
+                flex-direction: row;
+                overflow-y: scroll;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+            }
+
+            /* HEADERS */
+            .header { 
+            color: #000000;  
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+            }                  
+            
+            /* LAYOUT */
+            .middle {
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+            }
+
