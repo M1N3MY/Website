@@ -1,0 +1,71 @@
+            body, ul, li, h1, h2, h3 { /* removes default browser css */
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                background-color: #000000;
+                font-family: monospace;
+                font-weight: 500;
+                padding: 20px;
+            }
+
+            /* COMPONENTS */
+            .text {
+                color: #000000;
+                font-size: 18px;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                overflow-y: scroll;
+                align-items: center;
+            }
+
+            /* HEADERS */
+            .header { 
+                color: #ffffff;  
+                border-radius: 10px;
+                text-align: center;
+                padding: 10px;
+                margin: auto;
+            }
+
+            /* NAVIGATION */ 
+            .top-nav {
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                width: 90%;
+                padding: 5px;
+                margin: auto;
+            }
+            .top-nav-button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-color: transparent;
+                text-decoration: none;
+                font-size: 20px;
+                color: #ffffff;
+                padding: 5px; 
+                cursor: pointer;
+            }
+
+            .top-nav-button:hover {
+                color: #a12d47;
+            }
+
+            .top-nav-button {
+                color: #ffffff;
+            }
+            
+            /* LAYOUT */
+            .middle {
+                display: flex;
+                justify-content: center;
+            }
