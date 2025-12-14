@@ -3,34 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../door.css">
         <title>Sarah's Catalog</title>
-        <style>
-            body {
-                background-color: #000000;
-            }
-
-            .header {
-                color: #ffffff;
-            }
-
-            .top-nav-button {
-                color: #ffffff;
-            }
-
-            .wrapper {
-                background-color: #000000;
-            }
-
-            .main-container {
-                justify-content: center;
-            }
-        </style>
     </head> 
     <body> 
         <!-- header: title and top nav bar -->
-        <header class="header">
-            <h2>Sarah's Catalog</h2>  
+        <header>
+            <h1 class="header">Sarah's Catalog</h1>  
             <!-- top nav bar -->
             <nav class="top-nav">
                 <a href="../index.html" class="button top-nav-button">Home</a>
@@ -40,7 +19,14 @@
         </header>
         <!-- main container: space door --> 
         <div class="main-container">
-            <a href="space.html" class="door"><img src="../images/space-door.png"></a>
+            <main class="middle">
+                <section class="content text p">
+                    <img src="../images/space-door.png" usemap="#space-door">
+                    <map name="space-door">
+                        <area target="" href="space.html" coords="233,463,2,2" shape="rect">
+                    </map>
+                </section>
+            </main>
         </div>
     </body>
 
