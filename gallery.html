@@ -6,10 +6,15 @@
         <link rel="stylesheet" type="text/css" href="../style.css">
         <title>Sarah's Catalog</title>
     </head> 
+    <style>
+        .content {
+            gap: 10px;
+        }
+    </style>
     <body> 
         <!-- header: title and top nav bar -->
-        <header class="header">
-            <h2>Sarah's Catalog</h2>  
+        <header>
+            <h1 class="header">Sarah's Catalog</h1>  
             <!-- top nav bar -->
             <nav class="top-nav">
                 <a href="../index.html" class="button top-nav-button">Home</a>
@@ -26,7 +31,7 @@
                         <a href="gallery.html" class="button side-nav-button">Gallery</a>
                     </section>
                     <section class="left-sidebar">
-                        <a href="door.html" class="button side-nav-button">Open the door?</a>
+                        <a href="door.html" class="button side-nav-button">Door</a>
                     </section>
                     <section class="left-sidebar">
                     </section>
@@ -34,21 +39,19 @@
                     </section>
                 </nav>
                 <!-- middle: main content + updates -->
-                <main class="content middle">
+                <main class="middle" style="background-color:#fefeea; padding:20px;">
                     <!-- main content -->
                     <section class="content text p">
                         <h3 class="content-header">Website Art</h3>
                         <ul>
                             <li> Please feel free to use these images for whatever, just don't take credit for them.</li>
-                            <li> For display purposes, each image was resized to 125px x 125px. The original sizes can be found below:</li>
-                            <li> Sidebar border → 250px x 250px </li>
-                            <li> Main content border → 500px x 500px </li>
+                            <li> For display purposes, each image was resized.
                         </ul>
                         <div class="art">
-                            <img src="../images/main-content-border.png" width="125px" height="125px">
-                            <img src="../images/sidebar-border.png" width="125px" height="125px">
+                            <img src="../images/main-content-border.png" width="250px" height="250px">
+                            <img src="../images/sidebar-border.png" width="250px" height="250px">
+                            <img src="../images/space-door.png" width="138px" height="252px">
                         </div>
-                    </section>
                 </main>
                 <!-- right sidebar -->
                 <nav class="sidebar scrollable">
@@ -71,7 +74,7 @@
                 </nav>
             </div> 
             <!-- footer -->
-            <footer class="footer">
+            <footer class="footer text p">
                 <p>Warning: site under construction!</p>
                 <img src="../images/cat-0491.gif" width="30" height="30"> 
             </footer>
