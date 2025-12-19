@@ -3,74 +3,36 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../style.css">
-        <title>Sarah's Catalog</title>
-        <style><!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../space.css">
         <title>Sarah's Catalog</title>
     </head> 
     <body> 
-        <!-- header: title and top nav bar -->
+        <!-- header: title -->
         <header>
-            <h2 class="header">Sarah's Catalog</h2>  
-            <!-- top nav bar -->
-            <div class="main-container">
-                <main class="middle">
-                    <section class="content text p">
-                        <img src="../images/space-door.png" usemap="#space-door">
-                        <map name="space-door">
-                            <area target=""  href="door.html" coords="233,463,2,2" shape="rect">
-                        <img src="../images/flower-window.png">
-                        </map> 
-                    </section>
-                    <section class="content text p">
-                        <img src="../images/spin-cat.gif">
-                        <p style="font-size:20px;">"I'm getting kind of dizzy..."</p>
-                    </section>
-                </main>
-            </div>
+            <h2 class="site-header">Sarah's Catalog</h2>  
         </header>
-            body {
-                background-color: #ffffff;
-            }
 
-            .header {
-                color: #000000;
-            }
+        <!-- main container: middle -->
+        <div class="main-container">
 
-            .top-nav-button {
-                color: #000000;
-            }
-
-            .wrapper {
-                background-color: #ffffff;
-            }
-
-            .main-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-top: 50px;
-
-            }
-        </style>
-    </head> 
-    <body> 
-        <!-- header: title and top nav bar -->
-        <header class="header">
-            <h2>Sarah's Catalog</h2>  
-            <!-- top nav bar -->
-            <div class="main-container">
-                <section>
-                    <a href="door.html"><img src="../images/space-door.png"></a>
+            <!-- middle: main content -->
+            <main class="middle">
+                <!-- door + window-->
+                <section class="content text p">
+                    <img src="../images/space-door.png" usemap="#space-door">
+                    <map name="space-door">
+                        <area target=""  href="door.html" coords="233,463,2,2" shape="rect">
+                    <img src="../images/flower-window.png">
+                    </map> 
                 </section>
-                <section>
+
+                <!-- spin cat -->
+                <section class="content text p">
                     <img src="../images/spin-cat.gif">
-                    <p style="font-size:20px;">"I could do this forever..."</p>
+                    <p style="font-size:20px;">"hi there!"</p>
                 </section>
-            </div>
-        </header>
+            </main>
+
+
+        </div> <!-- end of main container-->
+    </body>
