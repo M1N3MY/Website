@@ -6,7 +6,7 @@ body, ul, li, h1, h2, h3 { /* removes default browser css */
 body {
     display: flex;
     flex-direction: column;
-    background-color: #0d0e20;
+    background-color: #f7b6b4;
     font-family: monospace;
     font-weight: 500;
     padding: 20px;
@@ -18,7 +18,13 @@ body {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    width: 100%;
+    border: 2px solid #faf8e5;
+    border-radius: 10px;
+    background-color: #faf8e5;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    box-sizing: border-box
 }
 
 .button {
@@ -31,8 +37,14 @@ body {
     overflow-y: scroll;
 }
 
-.text {
+.footer-text {
     color: #0d0e20;
+    font-size: 20px;
+    padding-left: 10px; 
+}
+
+.text {
+    color: #202a44;
     font-size: 20px;
 }
 
@@ -45,31 +57,39 @@ iframe {
     max-width: 100%;
 }
 
-.gif {
+.content-border {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../images/cherry-blossom.jpg");
+    border: 5px solid #8fc1de;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    width: 100%; 
+    height: auto; 
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.content-border {
-    width: 100%;
-    border-style: solid;
-    border-image: url(images/main-content-border.png) 80 round;
-    border-image-width: 30px;
-    border-image-slice: 80;
-    box-sizing: border-box;
-    padding: 50px;
-    background-color: #fefeea;
+.blinkies {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+}
 
+.links {
+    text-decoration: none;
 }
 
 /* HEADERS */
-.header { 
-    color: #fefeea;  
+.site-header { 
+    color: #9e0232;  
     border-radius: 10px;
     text-align: center;
-    font-size: 30px;
-    padding: 10px;
+    font-size: 45px;
     margin: auto;
 }
 
@@ -83,6 +103,50 @@ iframe {
     font-weight: bold; 
 }
 
+/* NAVIGATION COMPONENTS */
+.top-nav-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 25px;
+    color: #9e0232;
+    padding: 10px; 
+    cursor: pointer;
+}
+
+.top-nav-button:hover {
+    color: #781727;
+}
+
+.sidebar-border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0; /* no shrinking */
+    border: 5px solid #8fc1de;
+    border-radius: 10px;
+    background-image: url("../images/cherry-blossom.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-images {
+    display: flex;
+    flex-direction: row;
+    overflow-x: wrap;
+}
+
+.nav-doors {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    padding: 0;
+}
+
 /* NAVIGATION */ 
 .top-nav {
     display: flex;
@@ -92,77 +156,46 @@ iframe {
     padding: 5px;
     margin: auto;
 }
-.top-nav-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: transparent;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fefeea;
-    padding: 5px; 
-    cursor: pointer;
-}
-
-.top-nav-button:hover {
-    color: #9e0232;
-}
 
 .sidebar {
   display: flex;
   flex-shrink: 0; /* no shrinking */
   flex-direction: column; /* vertical display -> column */
-  width: 300px;
   gap: 20px; /* between rows and columns... */
   box-sizing: border-box;
 }
 
 .left-sidebar {
     display: flex;
-    flex-direction: column;
-    border-style: solid;
-    border-image: url(images/sidebar-border.png) 60 stretch;
-    border-image-width: 60px;
-    border-image-slice: 60;
-    background-color: #fefeea;
-    height: 300px;
-    padding: 60px;
-    box-sizing: border-box;
+    flex-direction: row;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-style: 2px solid #faf8e5;
+    border-radius: 5px;
+    background-color: #faf8e5;
+    padding: 10px;
 }
 
 .right-sidebar {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-    border-image: url(images/sidebar-border.png) 60 stretch;
-    border-image-width: 60px;
-    border-image-slice: 60;
-    background-color: #fefeea;
-    height: 300px;
-    padding: 60px;
-    box-sizing: border-box;
-}
-
-.side-nav-button {
-    text-decoration: none;
-    color: #0d0e20;
-    font-size: 25px;
+    flex-direction: row;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border: 2px solid #faf8e5;
+    border-radius: 5px;
+    background-color: #faf8e5;
     padding: 5px;
 }
 
-.side-nav-button:hover {
-    color: #9e0232;
-}
-
-/* CORE LAYOUT */
+/* CORE LAYOUT*/
 .wrapper {
     display: flex;
     flex-direction: column;
     width: 90%;
     height: 90%;
-    background-color: #9e0232;
+    background-color: #b6d7ea;
     gap: 20px;
     padding: 5px;
     margin: 0 auto;
@@ -198,7 +231,7 @@ iframe {
 .updates {
     display: flex;
     flex-direction: column;
-    max-height: 500px;
+    max-height: 400px;
 }
 
 .art {
@@ -214,6 +247,6 @@ iframe {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 50%;
-    width: 30%;
+    height: 350px;
+    text-decoration: none;
 }
