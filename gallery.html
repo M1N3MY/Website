@@ -8,77 +8,143 @@
     </head> 
     <style>
         .content {
-            gap: 10px;
+            gap: 10px !important;
+        }
+
+        body {
+            background-color: #4e0714 !important;
+        }
+
+        .wrapper {
+            background-color: #781727 !important;
+        }
+
+        .site-header, .top-nav-button {
+            color: #e25752 !important;
+        } 
+
+        .top-nav-button:hover {
+            color: #ff8d8b !important;
+        }
+
+        .sidebar-border, .content-border {
+            background-image: url("../images/red.jpg") !important;
+            border: 5px solid #cb4429 !important;
+            background-size: cover;
+            background-position: center;
         }
     </style>
     <body> 
         <!-- header: title and top nav bar -->
         <header>
-            <h1 class="header">Sarah's Catalog</h1>  
+            <h1 class="site-header">Sarah's Catalog</h1>  
             <!-- top nav bar -->
             <nav class="top-nav">
                 <a href="../index.html" class="button top-nav-button">Home</a>
                 <a href="projects.html" class="button top-nav-button">Projects</a>
                 <a href="resume.html" class="button top-nav-button">Resume</a>
+                <a href="links.html" class="button top-nav-button">Links</a>
             </nav>  
         </header>
+
+
         <!-- wraps the main container -->
         <div class="wrapper"> 
             <!-- main container: left sidebar, middle, right sidebar --> 
             <div class="main-container">
+
+
+                <!-- left sidebar -->
                 <nav class="sidebar">
-                    <section class="left-sidebar">
-                        <a href="gallery.html" class="button side-nav-button">Gallery</a>
-                    </section>
-                    <section class="left-sidebar">
-                        <a href="door.html" class="button side-nav-button">Door</a>
-                    </section>
-                    <section class="left-sidebar">
-                    </section>
-                    <section class="left-sidebar">
-                    </section>
+                    <div class="sidebar-border">
+                        <section class="left-sidebar">
+                            <div class="nav-images">
+                                <a href="../pages/gallery.html" class="button side-nav-button"><img src="../images/gallery.png"></a>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="sidebar-border">
+                        <section class="left-sidebar">
+                            <div class="nav-doors">
+                                <a href="../pages/door.html" class="button side-nav-button"><img src="../images/door.png"></a>
+                            </div>
+                        </section>
+                    </div>
                 </nav>
-                <!-- middle: main content + updates -->
-                <main class="middle" style="background-color:#fefeea; padding:20px;">
-                    <!-- main content -->
-                    <section class="content text p">
-                        <h3 class="content-header">Website Art</h3>
-                        <ul>
-                            <li> Please feel free to use these images for whatever, just don't take credit for them.</li>
-                            <li> For display purposes, each image was resized.
-                        </ul>
-                        <div class="art">
-                            <img src="../images/main-content-border.png" width="250px" height="250px">
-                            <img src="../images/sidebar-border.png" width="250px" height="250px">
-                            <img src="../images/space-door.png" width="138px" height="252px">
-                        </div>
+
+
+                <!-- middle: main content -->
+                <main class="middle">
+                    <!-- website art -->
+                    <div class="content-border">
+                        <section class="content text p">
+                            <h3 class="content-header">Website Art</h3>
+                            <ul>
+                                <li>● Made in Procreate.</li>
+                                <li>● For display purposes, some of these images were resized.
+                            </ul>
+
+                            <div class="art">
+                                <img src="../images/main-content-border.png" width="125px" height="125px">
+                                <img src="../images/sidebar-border.png" width="125px" height="125px">
+                                <img src="../images/space-door.png" width="59px" height="116px">
+                                <img src="../images/door.png" width="47px" height="79px">
+                                <img src="../images/flower-window.png" width="52px" height="84px">
+                                <img src="../images/gallery.png" width="63px" height="64px">
+                                <img src="../images/spin-cat.gif" width="74px" height="102px">
+                                <img src="../images/ubuntu-server.png" width="71px" height="150px">
+                                <img src="../images/pihole-server.png" width="150px" height="40px">
+                            </div>
+                        </section>
+                    </div>
                 </main>
+
+
                 <!-- right sidebar -->
                 <nav class="sidebar scrollable">
-                    <section class="right-sidebar">
-                        <!--<h3 class="sidebar-header"></h3>*/-->
-                        <img class="gif" src="https://momg.neocities.org/gifs/i-51402.gif" width="100px" height="150px"> 
-                    </section>
-                    <section class="right-sidebar">
-                        <!--<h3 class="sidebar-header"></h3>*/-->
-                        <img class="gif" src="https://momg.neocities.org/gifs/i-31910.gif" width="50px" height="50px">
-                    </section>
-                    <section class="right-sidebar">
-                        <!--<h3 class="sidebar-header"></h3>*/-->
-                        <img class="gif" src="https://momg.neocities.org/gifs/i-78883.gif" width="50px" height="50px">
-                    </section>
-                    <section class="right-sidebar">
-                        <!--<h3 class="sidebar-header"></h3>*/-->
-                        <img class="gif" src="https://momg.neocities.org/gifs/i-49714.gif" width="53" height="46">
-                    </section>
+                    <div class="sidebar-border">
+                        <section class="right-sidebar">
+                            <!--<h3 class="sidebar-header"></h3>*/-->
+                            <img class="gif" src="https://momg.neocities.org/gifs/i-51402.gif" width="100px" height="150px"> 
+                        </section>
+                    </div>
+
+                    <div class="sidebar-border">
+                        <section class="right-sidebar">
+                            <!--<h3 class="sidebar-header"></h3>*/-->
+                            <img class="gif" src="https://momg.neocities.org/gifs/i-31910.gif" width="50px" height="50px">
+                        </section>
+                    </div>
+
+                    <div class="sidebar-border">
+                        <section class="right-sidebar">
+                            <!--<h3 class="sidebar-header"></h3>*/-->
+                            <img class="gif" src="https://momg.neocities.org/gifs/i-78883.gif" width="50px" height="50px">
+                        </section>
+                    </div>
+
+                    <div class="sidebar-border">
+                        <section class="right-sidebar">
+                            <!--<h3 class="sidebar-header"></h3>*/-->
+                            <img class="gif" src="https://momg.neocities.org/gifs/i-49714.gif" width="53" height="46">
+                        </section>
+                    </div>
                 </nav>
-            </div> 
+
+
+            </div> <!-- end of main container-->
+
+
             <!-- footer -->
-            <footer class="footer text p">
+            <footer class="footer footer-text">
                 <p>Warning: site under construction!</p>
                 <img src="../images/cat-0491.gif" width="30" height="30"> 
             </footer>
-        </div>
+
+
+        </div> <!-- end of wrapper-->
+
+
     </body>
 </html>
-
