@@ -3,125 +3,28 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="splash.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
         <title>Sarah's Catalog</title>
     </head> 
     <body> 
-        <!-- header: title + top nav bar -->
-        <header>
-            <h1 class="site-header">Sarah's Catalog</h1>
-            <!-- top nav bar -->
-            <nav class="top-nav">
-                <a href="index.html" class="button top-nav-button">Home</a>
-                <a href="pages/projects.html" class="button top-nav-button">Projects</a>
-                <a href="pages/resume.html" class="button top-nav-button">Resume</a>
-                <a href="pages/links.html" class="button top-nav-button">Links</a>
-            </nav>    
-        </header>
+        <!-- main conatiner: splash -->
+        <div class="main-container">
+            <!-- splash: message + buttons -->
+            <main class="splash">
+                <section class="important">
+                    <h2 class="heading">Important!</h2>
+                    <ul class="text">
+                        <li>This site is always under construction.</li>
+                        <li>It is NOT mobile friendly.</li>
+                        <li>Also it doesn't work with dark mode browser extensions.</li>
+                        <li>Feel free to inspect the website, just don't copy the template.</li>
+                        <li>Thanks for reading!</li>
+                    </ul>
 
-
-        <!-- wraps the main container -->
-        <div class="wrapper">  
-            <!-- main container: left sidebar, middle, right sidebar --> 
-            <div class="main-container">
-
-
-                <!-- left sidebar -->
-                <nav class="sidebar scrollable">
-                    <div class="sidebar-border">
-                        <section class="left-sidebar">
-                            <div class="nav-images">
-                                <a href="pages/gallery.html" class="button side-nav-button"><img src="images/gallery.png"></a>
-                            </div>
-                        </section>
-                    </div>
-
-                    <div class="sidebar-border">
-                        <section class="left-sidebar">
-                        <div class="nav-doors">
-                            <a href="pages/door.html" class="button side-nav-button"><img src="images/door.png"></a>
-                        </div>
-                        </section>
-                    </div>
-                </nav>
-
-
-                <!-- middle: main content -->
-                <main class="middle">
-                    <!-- about -->
-                    <div class="content-border">
-                        <section class="content text p">
-                            <h3 class="content-header">About</h3>
-                            <p>Welcome to my website! My name is Sarah. Recently, I've graduated from UMBC with a degree in information systems. 
-                            <p>This website is a mix between a portfolio and personal website. It's heavily inspired by the indie web movement. There is no definite plan for it as of now, but I know I want to add my projects and art in here. While also personalizing this website and making it a fun place to visit.</p>  
-                        </section>  
-                    </div>
-
-                    <!-- updates -->
-                    <div class="content-border">
-                        <section class="content updates text p">
-                            <!-- allows scrolling in the content border (nested) -->
-                            <div class="scrollable">
-                                <h3 class="content-header">Updates</h3>
-                                <p>(Last updated 12/19/25)</p>
-                                <article><p>12/18/25: Went from border sliced borders to using background image as borders. Also did a HUGE visual overhaul.</p></article>
-                                <article><p>12/17/25: Added project pages, replaced the sidebar nav buttons into images, and updated the gallery page. Also added a testing page.</p></article>
-                                <article><p>12/13/25: Separated the middle into separate sections. Added color and project cards.</p></article>
-                                <article><p>12/12/25: Added a door page and a secret "room". Also added an about section. </p></article>
-                                <article><p>12/11/25: Divided sidebars into boxes + added border images, added borders to main content area, and created a gallery page</p></article>
-                                <article><p>12/6/25: Added resume, optimized and changed classes in a few different areas, and created footer section.</p></article>
-                                <article><p>12/5/25: Update section created.</p></article>
-                                <article><p>12/4/25: Website created: wrapper, top navigation bar, sidebars, and center content area created.</p></article>
-                            </div>
-                        </section>
-                    </div>
-                </main>
-
-
-                <!-- right sidebar -->
-                <nav class="sidebar scrollable">
-                    <div class="sidebar-border">
-                        <section class="right-sidebar">
-                            <!--<h3 class="sidebar-header"></h3>*/-->
-                            <img class="gif" src="https://momg.neocities.org/gifs/i-51402.gif" width="100px" height="150px"> 
-                        </section>
-                    </div>
-
-                    <div class="sidebar-border">
-                        <section class="right-sidebar">
-                            <!--<h3 class="sidebar-header"></h3>*/-->
-                            <img class="gif" src="https://momg.neocities.org/gifs/i-31910.gif" width="50px" height="50px">
-                        </section>
-                    </div>
-
-                    <div class="sidebar-border">
-                        <section class="right-sidebar">
-                            <!--<h3 class="sidebar-header"></h3>*/-->
-                            <img class="gif" src="https://momg.neocities.org/gifs/i-78883.gif" width="50px" height="50px">
-                        </section>
-                    </div>
-
-                    <div class="sidebar-border">
-                        <section class="right-sidebar">
-                            <!--<h3 class="sidebar-header"></h3>*/-->
-                            <img class="gif" src="https://momg.neocities.org/gifs/i-49714.gif" width="53" height="46">
-                        </section>
-                    </div>
-                </nav>
-
-
-            </div> <!-- end of main container -->
-
-
-            <!-- footer -->
-            <footer class="footer footer-text">
-                <p>Warning: site under construction!</p>
-                <img src="images/cat-0491.gif" width="30" height="30"> 
-            </footer>
-
-
-        </div> <!-- end of wrapper -->
-
-
-    </body>
-</html>
+                <section class="splash-buttons">
+                    <a class="button text" href="home.html">Enter</a>
+                </section>
+            </main>
+        </div> <!-- end of main container -->    
+    <body>
