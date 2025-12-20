@@ -1,0 +1,67 @@
+body, ul, li, h1, h2, h3 { /* removes default browser css */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    min-height: 100vh;
+    font-family: monospace;
+}
+
+/* COMPONENTS */
+.text {
+    color: #47524d;
+    font-size: 20px;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    background-color: #47524d;
+    color: #dee0e0;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: #d0d1d1;
+    color: #47524d;
+}
+
+.heading {
+    color: #47524d;
+    text-align: center;
+}
+
+/* LAYOUT */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    max-height: auto;
+    border: 5px solid #cbd0ce;
+    background-image: url("/images/white.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.splash-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
